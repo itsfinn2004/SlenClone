@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - paper
+  - GameMaster
   layers:
   - Default
   - TransparentFX
@@ -14,8 +15,8 @@ TagManager:
   - UI
   - Player
   - tree
-  - 
-  - 
+  - AI Enemy ding iets
+  - interactable
   - 
   - 
   - 

@@ -1,0 +1,4 @@
+repository "SlenClone@fstreunding@cloud"
+  path "/"
+    br "/main"
+    co "/main"

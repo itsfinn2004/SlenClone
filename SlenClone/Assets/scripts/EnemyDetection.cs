@@ -4,82 +4,93 @@ using UnityEngine;
 
 public class EnemyDetection : MonoBehaviour
 {
-    //public GameObject Lasthit;
-    //public Vector3 collision = Vector3.zero;
-    //public float GroteDrawgizmo = 0.2f;
-    //public int MaxLenght = 100;
-
-
-    //private void Update()
-    //{
-    //    var ray = new Ray(this.transform.position, this.transform.forward);
-    //    RaycastHit hit;
-    //    if (Physics.Raycast(ray, out hit, MaxLenght))
-    //    {
-    //        Lasthit = hit.transform.gameObject;
-    //        collision = hit.point;
-    //        Debug.Log(hit.transform.gameObject);
-    //    }
-
-
-
-    //}
-
     TestController controller;
-    public LayerMask layer;
-    public float coneAngle = 45f;
-    public float detectionRange = 10f;
+    public GameObject Lasthit;
+    public Vector3 collision = Vector3.zero;
+    public float GroteDrawgizmo = 0.2f;
+    public int MaxLenght = 100;
     public GameObject enemy;
+    public GameObject cone;
 
+         void Awake()
+         {
 
-    private void Awake()
-    {
-     
-        controller = enemy.GetComponent<TestController>();
-    }
-    void Update()
-    {
-        DetectObjectsInCone();
-    }
+            controller = enemy.GetComponent<TestController>();
+         }
+   
 
-    void DetectObjectsInCone()
+    private void Update()
     {
-        // Cast rays in a cone pattern
-        for (float angle = -coneAngle / 1; angle <= coneAngle / 1; angle += 5f)
+        var ray = new Ray(this.transform.position, this.transform.forward);
+        RaycastHit hit;
+        if (Physics.Raycast(ray, out hit, MaxLenght))
         {
-            // Calculate direction based on current angle
-            Vector3 direction = Quaternion.Euler(0, angle, 0) * transform.forward;
-
-            // Raycast in the calculated direction
-            RaycastHit hit;
-            if (Physics.Raycast(transform.position, direction, out hit, detectionRange))
+            Lasthit = hit.transform.gameObject;
+            collision = hit.point;
+            Debug.Log(hit.transform.gameObject);
+            Vector3 direction = Quaternion.Euler(0,0, 0) * transform.forward;
+            if (hit.collider.CompareTag("Enemy"))
             {
-                // Check if the hit object is an enemy or something else
-                if (hit.collider.CompareTag("Enemy"))
-                {
-                    // Handle enemy detection logic here
-                    
-                    Debug.Log("Enemy detected!");
-                    
-                    controller.CanMove = false;
-                }
-                else if (!hit.collider.CompareTag("Enemy"))
-                {
-                    Debug.Log("Enemy NOOOOOT detected");
-                    controller.CanMove = true;
-                }
-                //werkt half omdat de bool van canmove de heletijd switched omdat meerdere rayscasts worden uitgezonden
+                Debug.Log("you hit the enemy");
             }
 
-            // Visualize the rays (optional)
-            Debug.DrawRay(transform.position, direction * detectionRange, Color.red);
+
+                Debug.DrawRay(ray.origin, ray.direction * MaxLenght, Color.red);
+
         }
+
+
+
+        //}
+
+        //public LayerMask layer;
+        //public float coneAngle = 45f;
+        //public float detectionRange = 10f;
+
+
+        
+
+        //void DetectObjectsInCone()
+        //{
+        //    // Cast rays in a cone pattern
+        //    for (float angle = -coneAngle / 1; angle <= coneAngle / 1; angle += 5f)
+        //    {
+        //        // Calculate direction based on current angle
+        //        Vector3 direction = Quaternion.Euler(0, angle, 0) * transform.forward;
+
+        //        // Raycast in the calculated direction
+        //        RaycastHit hit;
+        //        if (Physics.Raycast(transform.position, direction, out hit, detectionRange))
+        //        {
+        //            // Check if the hit object is an enemy or something else
+        //            if (hit.collider.CompareTag("Enemy"))
+        //            {
+        //                // Handle enemy detection logic here
+
+        //                Debug.Log("Enemy detected!");
+
+        //                controller.CanMove = false;
+        //            }
+        //            else if (!hit.collider.CompareTag("Enemy"))
+        //            {
+        //                Debug.Log("Enemy NOOOOOT detected");
+        //                controller.CanMove = true;
+        //            }
+        //            //werkt half omdat de bool van canmove de heletijd switched omdat meerdere rayscasts worden uitgezonden
+        //        }
+
+        //        // Visualize the rays (optional)
+        //        Debug.DrawRay(transform.position, direction * detectionRange, Color.red);
+        //    }
+        //}
+
+
+
+
+
+
+
     }
-
-
-
-
-
 }
 
   

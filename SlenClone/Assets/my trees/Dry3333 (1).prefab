@@ -12,12 +12,12 @@ GameObject:
   - component: {fileID: 7920704759039484367}
   - component: {fileID: 7468698659716263304}
   - component: {fileID: 7322563349906715938}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry3333
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2788293868769849760
 Transform:
@@ -117,12 +117,12 @@ GameObject:
   - component: {fileID: 2650557373001345993}
   - component: {fileID: 5040025450823402202}
   - component: {fileID: 1673961727456270396}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD014
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &2650557373001345993
 Transform:
@@ -200,12 +200,12 @@ GameObject:
   - component: {fileID: 8019632647807143171}
   - component: {fileID: 4817999939378094241}
   - component: {fileID: 3709478943182997980}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD013
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &8019632647807143171
 Transform:
@@ -283,12 +283,13 @@ GameObject:
   - component: {fileID: 4375858708468727924}
   - component: {fileID: 7571756423493526078}
   - component: {fileID: 2777323324819059166}
-  m_Layer: 0
+  - component: {fileID: -4589782295166348185}
+  m_Layer: 7
   m_Name: Dry3333 (1)
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &4375858708468727924
 Transform:
@@ -363,6 +364,22 @@ CapsuleCollider:
   m_Height: 5.83
   m_Direction: 1
   m_Center: {x: -0.2, y: 2.19, z: 0.62}
+--- !u!208 &-4589782295166348185
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5568230949349634125}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &6331561438054466416
 GameObject:
   m_ObjectHideFlags: 0
@@ -374,12 +391,12 @@ GameObject:
   - component: {fileID: 6882069107768304492}
   - component: {fileID: 2185631716340544574}
   - component: {fileID: 3636346185939368606}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
+  m_StaticEditorFlags: 2147483647
   m_IsActive: 1
 --- !u!4 &6882069107768304492
 Transform:

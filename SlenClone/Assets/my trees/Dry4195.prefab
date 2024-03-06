@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 3506123378427685359}
   - component: {fileID: 4590569263915976574}
   - component: {fileID: 1306455471081775468}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD007
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -95,7 +95,7 @@ GameObject:
   - component: {fileID: 8586389011987744627}
   - component: {fileID: 6699143365953522856}
   - component: {fileID: 3454087564150421952}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry4195
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -200,7 +200,8 @@ GameObject:
   - component: {fileID: 3409556760177751384}
   - component: {fileID: 4228213492298791495}
   - component: {fileID: 6714919477538749780}
-  m_Layer: 0
+  - component: {fileID: 3596499194380839676}
+  m_Layer: 7
   m_Name: Dry4195
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -280,6 +281,22 @@ CapsuleCollider:
   m_Height: 8.41
   m_Direction: 1
   m_Center: {x: 0.66, y: 0.18, z: 0}
+--- !u!208 &3596499194380839676
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 767418271958215196}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &1719518520143948277
 GameObject:
   m_ObjectHideFlags: 0
@@ -291,7 +308,7 @@ GameObject:
   - component: {fileID: 8278802736280562293}
   - component: {fileID: 376252389259350319}
   - component: {fileID: 4996837997798812258}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD008
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +391,7 @@ GameObject:
   - component: {fileID: 8806341220976215669}
   - component: {fileID: 4041807863502104002}
   - component: {fileID: 7472279219054712395}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}

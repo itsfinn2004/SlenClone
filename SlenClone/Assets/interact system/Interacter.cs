@@ -5,16 +5,23 @@ using UnityEngine;
 
 public class Interacter : MonoBehaviour
 {
+    public GameObject gamemaster;
    [SerializeField] private Transform _interactionpoint;
     [SerializeField] private float _interactionPointRadius = 0.5f;
     [SerializeField] private LayerMask _interactableMask;
+    WinCondition win;
 
     private readonly Collider[] _colliders = new Collider[3];
     [SerializeField] private int _numFound;
 
     public GameObject EToInteract;
 
-   
+
+    private void Awake()
+    {
+        gamemaster = GameObject.FindWithTag("GameMaster");
+        win = gamemaster.GetComponent<WinCondition>();
+    }
 
     private void Update()
     {

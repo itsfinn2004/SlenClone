@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 2658046067332007377}
   - component: {fileID: 2638113153204400884}
   - component: {fileID: 4811913430284650523}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD003
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -94,7 +94,8 @@ GameObject:
   - component: {fileID: 1310730723045723235}
   - component: {fileID: 2076823790108914678}
   - component: {fileID: 4392217723386711190}
-  m_Layer: 0
+  - component: {fileID: -3488102498130571564}
+  m_Layer: 7
   m_Name: Dry5818
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -174,6 +175,22 @@ CapsuleCollider:
   m_Height: 12.16
   m_Direction: 1
   m_Center: {x: 0, y: 2.96, z: 0}
+--- !u!208 &-3488102498130571564
+NavMeshObstacle:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2266124467885133729}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Shape: 1
+  m_Extents: {x: 0.5, y: 0.5, z: 0.5}
+  m_MoveThreshold: 0.1
+  m_Carve: 0
+  m_CarveOnlyStationary: 1
+  m_Center: {x: 0, y: 0, z: 0}
+  m_TimeToStationary: 0.5
 --- !u!1 &2542905076597238267
 GameObject:
   m_ObjectHideFlags: 0
@@ -185,7 +202,7 @@ GameObject:
   - component: {fileID: 5265170841751692242}
   - component: {fileID: 1218046455317187916}
   - component: {fileID: 56105382605220139}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD004
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -269,7 +286,7 @@ GameObject:
   - component: {fileID: 7173695771127744453}
   - component: {fileID: 6503256547914597784}
   - component: {fileID: 4113344077921662342}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry5818
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -374,7 +391,7 @@ GameObject:
   - component: {fileID: 3786650727434553229}
   - component: {fileID: 8868091382193090216}
   - component: {fileID: 8340552566123306724}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: Dry8873LOD
   m_TagString: Untagged
   m_Icon: {fileID: 0}
